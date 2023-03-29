@@ -1,0 +1,99 @@
+1. 不运行，你能够知道下述语句最后的输出吗？
+x = 18 / 2 % 2 * 3 ** 3
+print (x)
+
+答： 输出为27.0
+
+考察运算符和优先级，幂运算优先级最高， /为浮点除法
+相当于 x = ((18 / 2) % 2 ) * (3 ** 3)
+x = (9.0 % 2) * 27 = 1.0 * 27 = 27.0
+所以输出为27.0  
+
+
+2. 假设今天是星期m，其中m可取值1到7，分别对应星期1到星期天。问n天之后是
+ 星期几（同样用数字表示，取值为1到7）。请给出相应的代码实现。
+
+future_wday = (wday - 1 + n) % 7 + 1
+
+or 
+future_wday = (wday + n) % 7
+if future_wday == 0:
+    future_wday = 7
+
+
+WDAY='一二三四五六天'
+import datetime
+now = datetime.datetime.now()
+wday = now.isoweekday()
+print('今天是星期%s' % WDAY[wday - 1])
+n = int(input('请问您想知道哪天之后是星期几？...'))
+if n < 0:
+    raise ValueError('n应该是正整数')
+future_wday = (wday - 1 + n) % 7 + 1
+# print(future_wday)
+print('星期%s' % WDAY[future_wday - 1])
+
+
+
+3. 采取多种方式（字符串转义、长字符串、原始字符串）定义一个字符串，该字符串应该包含下面两行文字
+It's ok.
+"Thank you very much!" she said.
+
+答： 考察字符串定义，字符转义、长字符串，原始字符串
+text = r'''It's ok.
+"Thank you very much!" she said.'''
+
+text = 'It\'s ok.\n"Thank you very much!" she said.'
+
+text = '''It's ok.
+"Thank you very much!" she said.'''
+
+4. 不运行，请问下列语句的输出应该是什么？
+print('new' 'line')
+
+答： 
+两个连续的字符串字面量合并为一个字符串， 输出为newline
+
+5. 不运行，你能够知道下面python语句执行的结果是什么吗？
+
+# 字符串格式化的用法, 以浮点数为例
+f1 = float('1230.141592653589793')
+print('format string:%%s\t(%s)' % f1)
+print('format string:%%f\t(%f)' % f1)
+print('format string:%%.4\t(%.4f)' % f1)
+print('format string:%%8.f\t(%8.f)' % f1)
+print('format string:%%8.4f\t(%8.4f)' % f1)
+print('format string:%%08.4f\t(%08.4f)' % f1)
+print('format string:%%8.2f\t(%8.2f)' % f1)
+print('format string:%%08.2f\t(%08.2f)' % f1)
+print('format string:%%-8.2f\t(%-8.2f)' % f1)
+
+答案：   了解格式化字符中宽度和精度的概念
+format string:%s        (1230.14159265359)   # 浮点数转换为字符串，没有精度和宽度的概念
+format string:%f        (1230.141593)        # 系统缺省格式 %.6f，可以看到小数精度6位
+format string:%.4       (1230.1416)          # 小数点后4位
+format string:%8.f      (    1230)           # 小数0位，缺省为右对齐，至少8位，不够时前面添加空格
+format string:%8.4f     (1230.1416)          # 小数4位，至少8位，实际允许超过8位
+format string:%08.4f    (1230.1416)  
+format string:%8.2f     ( 1230.14)           # 小数2位，缺省为右对齐，至少8位，不够时前面添加空格
+format string:%08.2f    (01230.14)           # 小数2位，缺省为右对齐，至少8位，不够时前面添加0
+format string:%-8.2f    (1230.14 )           # 小数2位，采用左对齐，至少8位，不够时后面添加空格
+
+
+6. 下面的表达式中会出现错误的是(         )
+      a. int('10.8')
+      b. float('10')
+      c. int('10')
+      d. float(10.8)
+      e. int(10.8)
+      f. float('1.08e+1')
+
+答：  a
+考察int和float函数， int函数的参数可以没有，可以为数字类型的对象，可以是十进制的整数字符串，不支持十进制的浮点字符串，这样a会出错, c和e正确。
+float函数的参数可以没有，可以为数字类型的对象，可以是十进制的数字字符串，包括小数和科学计数法描述的字符串，因此b/d/f都正确。
+最终答案为a
+
+
+
+
+

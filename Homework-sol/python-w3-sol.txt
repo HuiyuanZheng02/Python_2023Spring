@@ -1,0 +1,154 @@
+﻿第3周作业
+
+
+1. 下列代码最后输出是什么？
+x = z = 1
+y = -1
+
+if x > 0:
+    if y > 0:
+        print("x > 0 and y > 0")
+elif z > 0:
+    print("x < 0 and z > 0")
+
+    A. x > 0 and y > 0
+    B. x < 0 and z > 0
+    C. x < 0 and z < 0
+    D. 没有输出
+
+答案： D
+if x > 0:                            # 满足，进入此分支
+    if y > 0:                        # y = -1 不满足
+        print("x > 0 and y > 0")
+elif z > 0:
+    print("x < 0 and z > 0")
+
+2. 下列代码最后输出是什么？
+
+income = 4001
+if income > 3000:
+    print("Income is greater than 3000")
+elif income > 4000:
+    print("Income is greater than 4000")
+
+	 A. 没有输出
+	 B. Income is greater than 3000
+	 C. Income is greater than 3000
+	    Income is greater than 4000
+	 D. Income is greater than 4000
+	 E. Income is greater than 4000
+	    Income is greater than 3000
+
+答案: B
+income = 4001
+if income > 3000:                  # 满足条件, 执行这个分支，接下来执行if之后的语句
+    print("Income is greater than 3000")
+elif income > 4000:                       # income<=3000的前提下， income > 4000
+    print("Income is greater than 4000")
+
+
+3. 下列代码执行后y的值是？
+
+x = 0
+y = 10 if x > 0 else -10
+
+	 A. -10
+	 B. 0
+	 C. 10
+	 D. 20
+	 E. 非法表达式
+
+答案： A
+x > 0 运算结果为False，因此 y = -10
+
+
+4. 分析下列代码
+
+代码块1
+
+if number % 2 == 0:
+    even = True
+else:
+    even = False
+
+代码块2
+
+even = True if number % 2 == 0 else False
+
+代码块3
+even = number % 2 == 0
+
+    A. 代码块2有语法错误
+    B. 代码块3和2有语法错误
+    C. 3个代码块都正确
+    D. 代码块1有语法错误
+
+答案： C
+代码块1为if双分支结构，而代码块2等号右边为if else运算符，
+代码块3，利用了比较运算的结果就是True和False。
+3个代码块完成相同的功能，但是代码块3是最好的写法。
+
+
+5. 请针对下列描述,分别写出相应的条件表达式以判断该描述是否成立。
+a. x和y都等于0
+b. x和y其中至少有一个等于0
+c. x和y至少有一个等于0，但是不会都等于0
+
+答案
+a. x == 0 and y == 0
+b. x == 0 or y == 0   
+   因为 x * y == 0   <==>  x == 0 or y == 0
+   也可以是x * y == 0
+c.  (x == 0 or y == 0 ) and not (x == 0 and y ==0)
+或者 (x == 0 and y != 0) or (x != 0 and y == 0)
+也可以是这样
+y != 0 if x == 0 else y == 0
+
+下面几种写法，可读性不是那么强
+与b类似，也可以是: 
+(x == 0 or y == 0) and x + y != 0
+
+也可以是这样：
+x * y == 0 and x + y != 0
+
+
+6. 请使用德摩根定理简化如下条件表达式，要求不出现not运算
+     not (number % 2 == 0 and number % 3 == 0)
+
+答案
+number % 2 != 0 or number % 3 != 0
+number % 2  or number % 3 
+
+
+7. x为一个整数，请写出相应的代码，根据x的取值分别输出x为正整数、x为0和x为负整数。
+x = int(input('请输入n= '))
+# 下面是你写的代码
+
+答案：
+x = int(input('请输入n= '))
+# 下面是你写的代码
+if x > 0:
+	print(x, '是正整数')
+elif x <0:
+	print(x, '是负整数')
+else:
+	print(x, '是正整数')
+
+
+8. 请写一个简单的double函数，该函数只有一个参数，返回该参数的倍数。
+def double(x):
+    return 2 * x
+
+
+9. 你已经在上题中编写了double函数，如果你不运行下述语句，你能够知道最后的输出是什么吗？
+x = 3
+x = double(double(x) + 3)
+print(x)
+
+答： 18
+考察函数调用
+x = double(double(x) + 3)
+相当于  tmp = double(x) + 3;  x = double(t)
+这样 tmp = 3 * 2 + 3 = 9;  x = 2 * 9 = 18
+
+
