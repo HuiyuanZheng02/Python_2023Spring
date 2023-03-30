@@ -27,3 +27,4 @@ Prof. Dilin Mao 毛迪林**
 [Project1 轮盘赌颜色](https://github.com/HuiyuanZheng02/Python_2023Spring/tree/main/Project/Project1%20%E8%BD%AE%E7%9B%98%E8%B5%8C%E9%A2%9C%E8%89%B2)  
 [Project2 时间转换](https://github.com/HuiyuanZheng02/Python_2023Spring/tree/main/Project/Project2%20%E6%97%B6%E9%97%B4%E8%BD%AC%E6%8D%A2)  
 [Project3 图案问题](https://github.com/HuiyuanZheng02/Python_2023Spring/tree/main/Project/Project3%20%E5%9B%BE%E6%A1%88%E9%97%AE%E9%A2%98)
+[Project4 欧拉数e](https://github.com/HuiyuanZheng02/Python_2023Spring/tree/main/Project/Project4%20%E6%AC%A7%E6%8B%89%E6%95%B0e)
