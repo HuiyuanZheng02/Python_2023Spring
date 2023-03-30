@@ -1,6 +1,6 @@
 '''
 2023-03-16
-20302010071 郑惠元
+@HuiyuanZheng02
 '''
 def shift_time():
     time = int(input('请输入时间间隔(分钟):'))
