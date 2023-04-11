@@ -1,0 +1,126 @@
+1. 尝试创建两个py文件，分别为util.py和test.py，分别运行看看有什么结果？思考一下其中的原因。
+
+文件util.py的内容如下：
+
+from math import pi, e, log2
+
+def test_util():
+    print('function test_util in util.py')
+    print('__name__=', __name__)
+
+if __name__ == '__main__':
+    print('pi = %s\ne = %s' % (pi, e))
+    test_util()
+
+文件test.py的内容如下
+
+import util
+
+if __name__ == '__main__':
+    print(util.log2(1024))
+    util.test_util()
+
+
+答： 
+a. 执行 util.py时 __name__为__main__，定义了test_util函数，接下来if条件判断为真
+输出 
+  pi=....
+  e=
+接下来调用test_util()输出，其中__name__ = __main__
+
+b. 执行test.py时，__name__为__main__，首先import util，会执行util模块的代码，但是util模块中的__name__为'util'，定义了函数test_util，后面if条件判断为假，循环体中的代码不会执行
+接下来在test.py中 if条件判断为真，
+输出调用 util.log2(1024)后的结果 10.0
+调用util.test_util函数，输出相应内容，其中__name__ = util
+
+
+2. 请将下述用于求解一元二次方程（系数分别为a、b、c）的那个更大的根的数学表达式用python表达式表示 
+(-b+ √(b^2-4ac))/2a
+
+答：
+(-b + math.sqrt(b ** 2 - 4 * a * c)) / (2 * a)
+
+b ** 2可以用 b * b代替
+
+
+
+3.  list(seq)构造函数构造一个列表，其中的元素来自于seq中的每个元素。[1, 2, 3]表示由1、2、3这3个整数组成的列表。
+   请问下列代码产生的list是什么？
+   list(range(5))
+   list(range(1, 5))
+   list(range(1, 10, 3))
+   list(range(12, 5, -2))
+
+答案：
+   list(range(5))           ==> 从0到5(不包括5)的整数，即[0,1,2,3,4]
+   list(range(1, 5))        ==> [1,2,3,4]
+   list(range(1, 10, 3))    ==> 从1开始但要求小于10，且步长为3，因此为[1,4,7]
+   list(range(12, 5, -2))   ==> 步长为负数，表示从12开始，每次减少2，但要求大于5，因此为[12,10,8,6]
+
+
+4. 写一个循环，打印100行的python
+
+答案：
+for i in range(100):
+    print('python')
+
+
+5. 下列代码的输出是什么？
+
+
+def filter_numbers(numbers, n):
+    for number in numbers:
+        if not number % n:
+            print(number)
+
+filter_numbers(range(0, 10), 4)
+
+答案:
+
+首先看看filter_numbers函数的代码，从后面的调用可以看到传递了一个range对象和一个数值
+for循环检查range对象里面的每个整数，我们看看if语句的条件，not k 要为真,说明k真值判断
+为False，k为整数，因此k一定要为0才可以，这样if的条件判断等价于 number % n == 0，
+即n的倍数才会输出。
+
+从上面的分析可以知道filter_numbers的作用：numbers中那些是n的倍数的数将输出
+
+调用函数filter_numbers(range(0, 10), 4),传递的numbers中的元素为[0,9] , n=4，这样只有4的倍数才会输出
+0
+4
+8
+
+6. 下列循环中的print调用多少次？
+
+for i in range(10):
+    for j in range(i):
+        print(i * j)
+
+	 A. 100
+	 B. 55
+	 C. 10
+	 D. 45
+
+答案： D
+外循环i in [0,9]，而内循环j in [0,i-1]，共i次，
+因此 0 + 1 + ... + 9 = 45
+
+7. 如果不执行下面的代码，你能够知道其输出的是什么吗？ 
+for i in range(1, 7):
+    for j in range(6, 0, -1):
+       print(j if j <= i else " ", end = " ")
+    print()
+
+答案：这道题稍微有些难度。
+外层循环i从1一直增长到6， 分析循环体中的print语句，可以看到总共有6行
+    内层循环j从6一直减少到1
+i = 1 2 3 4 5 6
+j = 6, 5, 4, 3, 2, 1
+         print语句会输出一个字符，然后附加一个空格，这个字符或者为j或者为空，
+只有j小于等于i才会输出j。即对于第i行，前面为空，后面的i i-1 ... 1会输出
+根据上面的分析, 最后输出的结果为：
+          1
+        2 1
+      3 2 1
+    4 3 2 1
+  5 4 3 2 1
+6 5 4 3 2 1
