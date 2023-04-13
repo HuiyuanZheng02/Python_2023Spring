@@ -36,3 +36,4 @@ Prof. Dilin Mao 毛迪林**
 [Project3 图案问题](https://github.com/HuiyuanZheng02/Python_2023Spring/tree/main/Project/Project3%20%E5%9B%BE%E6%A1%88%E9%97%AE%E9%A2%98)  
 [Project4 欧拉数e](https://github.com/HuiyuanZheng02/Python_2023Spring/tree/main/Project/Project4%20%E6%AC%A7%E6%8B%89%E6%95%B0e)  
 [Project5 猜数游戏](https://github.com/HuiyuanZheng02/Python_2023Spring/tree/main/Project/Project5%20%E7%8C%9C%E6%95%B0%E6%B8%B8%E6%88%8F)  
+[Project6 温度转化表](https://github.com/HuiyuanZheng02/Python_2023Spring/tree/main/Project/Project6%20%E6%B8%A9%E5%BA%A6%E5%AF%B9%E5%BA%94%E8%A1%A8)  
