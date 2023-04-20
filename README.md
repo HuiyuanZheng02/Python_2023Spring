@@ -21,6 +21,8 @@ Prof. Dilin Mao 毛迪林**
 ### 第四单元 容器对象
 [04-有序对象](https://github.com/HuiyuanZheng02/Python_2023Spring/blob/main/PPT/04-%E6%9C%89%E5%BA%8F%E5%AF%B9%E8%B1%A1.pdf)  
 示例程序：[05-sequence](https://github.com/HuiyuanZheng02/Python_2023Spring/tree/main/%E7%A4%BA%E4%BE%8B%E7%A8%8B%E5%BA%8F/05_sequence)
+练习：[Practice2](https://github.com/HuiyuanZheng02/Python_2023Spring/tree/main/Practice/practices2)  
+练习：[Practice3](https://github.com/HuiyuanZheng02/Python_2023Spring/tree/main/Practice/practices3)  
 
 
 ## Homework
@@ -28,9 +30,9 @@ Prof. Dilin Mao 毛迪林**
 [Homework 2](https://github.com/HuiyuanZheng02/Python_2023Spring/blob/main/Homework-sol/python-w2-sol.txt)  
 [Homework 3](https://github.com/HuiyuanZheng02/Python_2023Spring/blob/main/Homework-sol/python-w3-sol.txt)  
 [Homework 4](https://github.com/HuiyuanZheng02/Python_2023Spring/blob/main/Homework-sol/python-w4-sol.txt)  
-[Homework 5](https://github.com/HuiyuanZheng02/Python_2023Spring/blob/main/Homework-sol/python-w5-sol.txt)
-[Homework 6](https://github.com/HuiyuanZheng02/Python_2023Spring/blob/main/Homework-sol/python-w6-sol.txt)
-[Homework 7](https://github.com/HuiyuanZheng02/Python_2023Spring/blob/main/Homework-sol/python-w7-sol.txt)
+[Homework 5](https://github.com/HuiyuanZheng02/Python_2023Spring/blob/main/Homework-sol/python-w5-sol.txt)  
+[Homework 6](https://github.com/HuiyuanZheng02/Python_2023Spring/blob/main/Homework-sol/python-w6-sol.txt)  
+[Homework 7](https://github.com/HuiyuanZheng02/Python_2023Spring/blob/main/Homework-sol/python-w7-sol.txt)  
 
 ## Project
 [Project1 轮盘赌颜色](https://github.com/HuiyuanZheng02/Python_2023Spring/tree/main/Project/Project1%20%E8%BD%AE%E7%9B%98%E8%B5%8C%E9%A2%9C%E8%89%B2)  
@@ -39,3 +41,5 @@ Prof. Dilin Mao 毛迪林**
 [Project4 欧拉数e](https://github.com/HuiyuanZheng02/Python_2023Spring/tree/main/Project/Project4%20%E6%AC%A7%E6%8B%89%E6%95%B0e)  
 [Project5 猜数游戏](https://github.com/HuiyuanZheng02/Python_2023Spring/tree/main/Project/Project5%20%E7%8C%9C%E6%95%B0%E6%B8%B8%E6%88%8F)  
 [Project6 温度对应表](https://github.com/HuiyuanZheng02/Python_2023Spring/tree/main/Project/Project6%20%E6%B8%A9%E5%BA%A6%E5%AF%B9%E5%BA%94%E8%A1%A8)  
+[Project7 百鸡问题](https://github.com/HuiyuanZheng02/Python_2023Spring/tree/main/Project/Project7%20%E7%99%BE%E9%B8%A1%E9%97%AE%E9%A2%98)  
+
