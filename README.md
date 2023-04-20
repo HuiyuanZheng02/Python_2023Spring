@@ -29,6 +29,8 @@ Prof. Dilin Mao 毛迪林**
 [Homework 3](https://github.com/HuiyuanZheng02/Python_2023Spring/blob/main/Homework-sol/python-w3-sol.txt)  
 [Homework 4](https://github.com/HuiyuanZheng02/Python_2023Spring/blob/main/Homework-sol/python-w4-sol.txt)  
 [Homework 5](https://github.com/HuiyuanZheng02/Python_2023Spring/blob/main/Homework-sol/python-w5-sol.txt)
+[Homework 6](https://github.com/HuiyuanZheng02/Python_2023Spring/blob/main/Homework-sol/python-w6-sol.txt)
+[Homework 7](https://github.com/HuiyuanZheng02/Python_2023Spring/blob/main/Homework-sol/python-w7-sol.txt)
 
 ## Project
 [Project1 轮盘赌颜色](https://github.com/HuiyuanZheng02/Python_2023Spring/tree/main/Project/Project1%20%E8%BD%AE%E7%9B%98%E8%B5%8C%E9%A2%9C%E8%89%B2)  

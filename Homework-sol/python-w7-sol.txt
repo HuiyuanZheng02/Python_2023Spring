@@ -1,0 +1,75 @@
+1 在下述代码中statement2会抛出异常。
+try:
+    statement1
+    statement2
+    statement3
+except Exception1:
+    # Handle exception
+except Exception2:
+    # Handle exception
+except Exception3:
+    # Handle exception
+else:
+	pass
+finally:
+    statement4
+
+statement5
+
+请问
+(1) 如果该异常没有被捕获，statement5会执行吗？
+(2) 如果异常类型为Exception3，请问statement3/statement4/statement5会被执行吗？
+
+答案:
+(1) statement5不会执行。
+如果异常没有被捕获，执行finally部分的statement4之后，往外抛出，不会执行try后面的代码,
+因此statement5不会执行
+
+(2) statement3不会执行，statement4和statement5会执行。
+statement2出现了异常，这样statement3不会被执行，而是匹配异常，由于异常类型
+为Exception3，捕获了异常，然后执行finally部分的statement4，然后执行try语句后
+的statement5。
+
+
+2. 下面这段代码的输出是什么？
+try:
+    x = float('abc123')
+    print('The conversion is complete.')
+except OSError:
+    print('This code caused an IOError.')
+except ValueError:
+    print('This code caused a ValueError.')
+print('The end.')
+
+答案：输出
+This code caused a ValueError.
+The end.
+
+float的时候出错，ValueError，这样输出This code caused a ValueError.，由于捕获了
+异常，顺序执行try后面的语句，输出The end.
+
+
+3. 实现一个函数f(x)，返回其算术平方根，如果x小于0，则抛出异常ValueError。
+  算术平方根的定义是这样的，如果一个非负数x的平方等于a，那么x就是a的算术平方根。
+  可以使用math模块的相应方法求算术平方根。
+
+答案：
+
+import math
+def f(x):
+    if x < 0:
+        raise ValueError('x < 0!')
+    return math.sqrt(x)
+
+或者
+def f(x):
+    try:
+        return math.sqrt(x)
+    except Exception as e:
+        raise ValueError('...) from None
+
+建议采用第1种解答
+		
+
+
+

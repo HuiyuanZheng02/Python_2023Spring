@@ -1,0 +1,179 @@
+1.  下列代码执行后输出是...
+
+number = 6
+while number > 0:
+    number -= 3
+    print(number, end = ' ')
+
+	 A. 6 3 0
+	 B. 6 3
+	 C. 3 0
+	 D. 3 0 -3
+	 E. 0 -3
+
+答案：C。
+关键是跟踪循环变量number的变化情况：
+初始值为6，每次-3，直到number > 0为止，这样循环变量number:  6 ---> 3 --> 0 (不满足条件退出循环)
+而在循环体输出的是循环变量减少后的值，因此为3和0
+
+2. 下列代码执行后输出是....?
+
+sum = 0
+item = 0
+while item < 5:
+    item += 1
+    sum += item
+    if sum > 4: break
+
+print(sum)
+
+	 A. 5
+	 B. 6
+	 C. 7
+	 D. 8
+
+答案: B
+1. 分析循环变量，item初始为0，每次加1，item < 5或者sum >4的时候循环结束，这样item最多从0到4
+2. sum初始为0，在每一轮每次加上item改变后的内容，也就是说sum = 0 + 1 + 2 + 3 + ...，但是一旦
+超过4的时候循环就结束，也就是说 sum = 0 + 1 + 2 + 3 = 6的时候结束，在这个过程中循环变量item从0到3
+
+具体而言：
+loop 1: 循环变量item: 0 -> 1,  sum : 0 --> 1
+loop 2: 循环变量item: 1 -> 2,  sum : 1 --> 1+2=3
+loop 3: 循环变量item: 2 -> 3,  sum : 3 --> 3+3 = 6,  满足sum > 4的条件break结束循环
+
+3. 下列代码执行后输出是....?
+
+sum = 0
+item = 0
+while item < 5:
+    item += 1
+    sum += item
+    if sum >= 4: continue
+
+print(sum)
+	 A. 15
+	 B. 16
+	 C. 17
+         D. 18
+
+答案:  A。
+分析if语句，if判断为真，continue回到循环开始，而判断为假也是回到循环开始。这样可以忽略if语句。
+循环变量item从0，每次加1，最后到达5的时候结束循环
+sum初始为0，每轮循环加上已经加1后的item，因此相当于sum = 0 + 1 + 2 ...，由于item到5的时候回到
+循环开始的地方就结束，因此sum一直加到5，即sum = 0 + 1 + 2 + 3 + 4 + 5 = 15
+
+
+具体而言：
+loop 1: 循环变量item: 0 -> 1,  sum : 0 --> 1
+loop 2: 循环变量item: 1 -> 2,  sum : 1 --> 1+2=3
+loop 3: 循环变量item: 2 -> 3,  sum : 3 --> 3+3 = 6,  continue
+loop 4: 循环变量item: 3 -> 4,  sum : 6 --> 6+4 = 10,  continue
+loop 4: 循环变量item: 4 -> 5,  sum : 10 --> 10+5 = 15,  continue
+loop end
+
+4. 下列代码执行完后的输出是：
+
+number = 25
+isPrime = True
+i = 2
+while i < number and isPrime:
+    if number % i == 0:
+        isPrime = False
+
+    i += 1
+
+print("i is", i, "isPrime is", isPrime)
+
+ A. i is 5 isPrime is True
+ B. i is 5 isPrime is False
+ C. i is 6 isPrime is True
+ D. i is 6 isPrime is False
+
+答案：D
+循环变量i,初始为2，一直递增，直到其>=25(即i in [2,...25-1]) 或者isPrime==False结束（即number有因子i)
+即该循环判断number中是否有小于number的因子（从2开始）存在，如果都不存在，则循环结束。
+
+i = 2， 25没有因子
+i = 3
+i = 4
+i = 5, 25有因子5存在(isPrime=False)， 更新i = 6 ，循环条件判断结束
+
+
+5. 分析下列代码：
+sum = d = 0
+while d != 10.0:
+    d += 0.1
+    sum = sum + d
+
+ A. 语法上有错
+ B. 程序进入死循环，因为循环中d一直为0.10
+ C. 程序有可能不会停止，因为浮点数运算的问题
+ D. 循环结束后，sum的值相当于 0 + 0.1 + 0.2 + 0.3 + ... + 1.9
+
+答案为  C。
+循环变量为d，初始0，每次加0.1，结束条件为10.0。
+语法方面没有什么问题，由于精度的关系，d一直无法等于10.0，这样会一直增加。
+循环条件中出现浮点数时，注意不要使用相等关系判断，而应该是比较大小关系，
+循环条件应该修改为 while d <= 10.0:
+
+
+6. 将下列for循环用while重写：
+
+for count in range(100, 0 -1):
+    print(count)
+
+答案:
+确定循环变量的初始值和最终值以及变化关系，初始为100，最终>0，每次-1
+count = 100
+while count > 0:
+    print(count)
+    count -= 1
+
+
+7. 写一个while循环，接收用户的输入，然后输出其输入的内容，直到用户输入quit时结束。你也可以如同ppt中介绍的一样，试着用多种方法实现。
+
+答案：
+版本1：while True + break
+while True:
+    text = input('please input text, quit if done...')
+    if text == 'quit':
+        break
+    print(text)
+
+版本2: 去掉break
+done = False
+while not done:
+    text = input('please input text, quit if done...')
+    if text == 'quit':
+        done = True
+        continue
+    print(text)
+
+版本3:
+text = input('please input text, quit if done...')
+while text != 'quit':
+    print(text)
+    text = input('please input text, quit if done...')
+
+
+8. 写一个while循环求从1开始的前面n个奇数的和.
+1 + 3 + 5 + ... + 2n-1
+
+答案：
+n = 10
+i = 1
+total = 0
+while i <= n:
+    total += 2 * i -1
+    i += 1
+
+
+n = 10
+i = 2
+total =  item = 1
+while i <= n:
+    item += 2
+    total += item
+    i += 1
+
