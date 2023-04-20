@@ -20,7 +20,7 @@ Prof. Dilin Mao 毛迪林**
 
 ### 第四单元 容器对象
 [04-有序对象](https://github.com/HuiyuanZheng02/Python_2023Spring/blob/main/PPT/04-%E6%9C%89%E5%BA%8F%E5%AF%B9%E8%B1%A1.pdf)  
-示例程序：[05-sequence](https://github.com/HuiyuanZheng02/Python_2023Spring/tree/main/%E7%A4%BA%E4%BE%8B%E7%A8%8B%E5%BA%8F/05_sequence)
+示例程序：[05-sequence](https://github.com/HuiyuanZheng02/Python_2023Spring/tree/main/%E7%A4%BA%E4%BE%8B%E7%A8%8B%E5%BA%8F/05_sequence)  
 练习：[Practice2](https://github.com/HuiyuanZheng02/Python_2023Spring/tree/main/Practice/practices2)  
 练习：[Practice3](https://github.com/HuiyuanZheng02/Python_2023Spring/tree/main/Practice/practices3)  
 
