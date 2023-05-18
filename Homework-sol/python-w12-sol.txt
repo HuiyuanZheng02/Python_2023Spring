@@ -1,0 +1,108 @@
+1. 编写函数odd_sum()，接收任意多个参数，支持keyword-only参数init，init缺省为0
+   将其中的奇数相加，返回计算后的结果, 如果传递了init，则求和的结果要加上init. 
+   print(odd_sum(1, 2, 6, 4, 5))  # 输出6
+   print(odd_sum(1, 2, 6, 4, 5, init=4))  # 输出10
+
+答案：
+
+def odd_sum(*args, init=0):
+   total = init
+   for i in args:
+       if i % 2:
+           total += i
+   return total
+
+
+2. 不执行，给出下面两个表达式运算的结果
+t = "Fun with Python"
+(a) t.isalpha()
+(b) t[4:8].islower()
+(c) '\n\n\n'.isspace()
+
+答案：(a)  False  (b) True  (c) True
+(a) 要求都是字母，有空格所以不是
+(b) t[4:8]切片，第5个字符开始的4个字符，为'with'.islower()，都是小写英文字母，所以True
+(c) 所有字符是否都为空白类字符，\n也是空白类字符。
+
+
+3. 假设一个句子最后可以包括多个感叹号、问号和点，请给出一条语句，将句子最后的那些感叹号问号和点删除
+比如, text为如下的字符串，希望最后得到的字符串为'Hi'
+text="Hi!......"
+
+答案：text.rstrip('!?.')
+要去最后的感叹号、问号和点，最后的，使用rstrip，参数就是要去掉的字符组成的字符串
+
+
+4. levels保存了如下的字符串，要对levels进行分割，最终产生如下的列表，请给出相应的代码
+levels = 'Beginner, Average, Advanced, Expert'
+# 产生的列表为 ['Beginner', 'Average', 'Advanced', 'Expert']
+
+答案:
+可以有多种实现方式
+a. 可以将逗号加上一个空格，即', '作为分隔符
+levels.split(', ')
+b. 可以将逗号替换为空格，然后split()，即
+levels.replace(',', ' ').split()
+c. 可以使用,分隔，然后使用列表推导式去掉前后空格
+[word.strip() for word in levels.split(',')]
+
+
+5. 写一个函数is_http_url，其参数为一个字符串，如果该字符串以https://或者http://开头，则返回True，否则返回False
+
+答案：
+def is_http_url(url):
+    if url.startswith(('https://', 'http://'))
+        return True
+    else:
+        return False
+
+或者
+def is_http_url(url):
+    return url.startswith(('https://', 'http://'))
+
+
+6. 写一个函数remove_chars(text, chars)，将text中那些在chars中出现的字符移走，返回一个新的字符串。
+
+答案：
+def remove_chars(text, chars):
+    tab = str.maketrans('','', chars)
+    return text.translate(tab)
+
+
+或者
+def remove_chars(text, chars):
+    result = []
+    for ch in text:
+        if ch not in chars:
+            result.append(ch) 
+
+    return ''.join(result)
+
+或者
+def remove_chars(text, chars):
+    for ch in chars:
+        text = text.replace(ch, '')
+    return text
+
+
+
+7. 写一个循环，询问用户 "Do you want to play again or quit?(y/n)" ，该循环将一直重复直到用户输入
+y或者n(可以是小写和大写形式)为止
+
+答案：
+while True:
+    text = input('Do you want to play again or quit?(y/n)').lower()
+    if text == 'y' or text == 'n':
+        break
+
+或者:
+
+while True:
+    text = input('Do you want to play again or quit?(y/n)')
+    if text.lower() in ('y', 'n'):
+        break
+
+或者:
+text = 'y'
+while text.lower() not in ('y', 'n'):
+    text = input('Do you want to play again or quit?(y/n)')

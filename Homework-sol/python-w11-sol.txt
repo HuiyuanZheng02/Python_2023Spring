@@ -1,0 +1,121 @@
+下面的1-7题对应着的python-w10.txt的第5-11题： 
+
+1.  假设d = {"tom":"john", "peter":45},  "john" in d 的结果为?  
+
+答案：False
+in运算符是判断key是否在字典中，结果为False
+
+
+2.  假设 d1 = {"john":40, "peter":45} , d2 = {"john":466, "peter":45}, d1 == d2 的结果为？
+
+答案：False
+字典的相等判断：不仅仅key一样，而且要求其映射的value也是一样。当然先后顺序并不重要
+
+
+3.  假设 d1 = {"john":40, "peter":45} , d2 = {"john":466, "peter":45}, d1 > d2 的结果为？
+	 A. True
+	 B. False
+	 C. 异常
+
+答案：C
+字典可以比较是否相等，但是无法比较大小
+
+
+4.  假设d = {"john":40, "peter":45},  要删除 "john":40, 写出相应的语句。
+
+答案： del d['john'] 或者 d.pop('john')
+可以del和下标结合，根据key删除，也可以调用pop方法，根据key删除并返回删除的value
+
+
+
+5.  假设d = {"john":40, "peter":45}, 要知道字典有多少项，写出相应的语句。
+
+答案： len(d)
+
+
+6. 下列代码执行后输出为？
+d = {"john":40, "peter":45}
+print(list(d))
+
+
+答案：['john', 'peter']
+字典作为可迭代对象，其元素为字典的key
+
+
+7.  假设d = {"john":40, "peter":45}, 执行语句s = d[45]后 s的值是？
+	 A. "peter"
+	 B. None
+	 C. 抛出异常KeyError
+	 D. 语法错
+
+
+答案：C
+通过下标访问时，如果key不存在，会抛出异常KeyError
+
+
+8.  假设d = {"john":40, "peter":45},请按照如下步骤写出相应的代码：
+a. 修改key为"peter"对应的值，使得其为原来的值的负数
+b. 增加一个元素到d中，其中key为'tony'，value为50
+c. 写一个循环，输出字典d的所有元素，每行有两列，第1列为字典d的key，第2列为key所映射的value
+d. 询问用户并得到用户的输入，提示符为 请输入待删除的key
+e. 根据步骤d的输入，删除对应的元素，同时显示该key所映射的值，如果没有对应的元素，则显示 key不存在
+
+答案：
+d['peter'] = -d['peter']
+d['tony'] = 50
+
+for key in d:
+    print(key, d[key])
+或者
+for key, value in d.items():
+    print(key, value)
+
+text = input('请输入待删除的key:')
+print(d.pop(text, 'key不存在'))
+
+9.  我们知道字典对象有一个get方法，如果key不存在，则返回None或第2个传递的参数。
+   现在我们要通过下标访问列表中的元素，我们也希望提供一个类似的安全版本，
+   get_element(s, idx)，s为列表，如果下标idx不合法，返回None，否则返回列表s中对应位置的元素。
+   请使用异常处理结构实现该函数。
+
+
+答案：
+def get_element(s, idx):
+    try:
+        return s[idx]
+    except IndexError as e:
+        return None
+
+
+10. 下面的表达式有没有错误？如果没有错误，给出运算的结果。如果有错误，请尝试改正。
+(a) "".join(["h", "e", "l", "l", "o"])
+(b) " ".join("glue", "these", "words", "together")
+(c) "".join([1, 2, 3, 4])
+
+答案：
+(a) 可迭代对象中的元素合并，结果为'hello'
+(b) join后面必须为可迭代对象而不是多个参数，用列表或元组字面量定义定义一个可迭代对象就可以了，比如
+" ".join(("glue", "these", "words", "together"))
+(c) 可迭代对象中必须是字符串，可使用列表推导式将其中的整数转换为字符串。
+"".join([str(i) for i in [1, 2, 3, 4]])
+
+
+11. 按照顺序写出对应的代码：
+a. 初始化一个空集合对象s
+b. 增加4到集合s中
+c. 增加4,6, 8,10到集合s中
+d. 询问用户输入一个整数（不考虑输入有误的情形），将该数从集合s中移走
+e. 创建另一个集合t，集合中的元素为1到20的整数（包括1和20）
+f. 求s和t的交集、并集、差集并输出
+
+答案：
+s = set()
+s.add(4)
+s.update(range(4, 11, 2))
+n = int(input('please input a number: '))
+s.discard(n)
+t = set(range(1, 21))
+print(s.intersection(t))  # s & t
+print(s.union(t))  # s | t
+print(s.difference(t))  # s - t
+
