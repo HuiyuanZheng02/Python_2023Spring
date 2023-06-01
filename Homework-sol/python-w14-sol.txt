@@ -1,0 +1,46 @@
+1. 写一个正则表达式，并且使用findall方法，要求正好能够识别如下字符串："bat", "bit", "but", "hat", "hit", "hut"。尽可能简化该正则表达式。
+text = 'bat, bit, but, hat,  hit. hut.'
+
+答案：
+import re
+re.findall('[bh][aiu]t', text)
+
+选择符中每个子模式都是单个字符时，建议采用字符集的方式描述
+[bh]比(b|h)要更好一些
+
+
+2. 写一个正则表达式，能够找到文本中所有合法的python变量名。
+text = "_ _test 123test test test123 123"
+
+答案：变量名要求以字母下划线开始，后面可以为字母数字和下划线。另外变量名应该是一个完整的单词，
+不能是123test里面的test。这样最前面必须有\b，最后也必须有\b
+另外注意采用原始字符串传递正则表达式，如果不采用原始字符串，\b的\需要转义
+
+re.findall(r'\b[a-zA-Z_]\w*\b', text)
+re.findall('\\b[a-zA-Z_]\w*\\b', text)
+或者
+re.findall(r'\b[a-zA-Z_][a-zA-Z_0-9]*\b', text)
+
+3.  下面有一段代码，不执行代码，请给出这段代码运行后输出的内容
+import re
+text = '2020/5/29, 2022/05/2, 2022/12/29, 2021/12/02'
+pattern1 = '[0-9]{4}/[0-9]{1,2}/[0-9]{1,2}'
+pattern2 = '([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})'
+for pattern in pattern1, pattern2:
+    matches = re.findall(pattern, text)
+    print(matches)
+
+答案：
+如果没有group，则输出整个模式匹配的内容
+如果有group，则仅仅输出这些group匹配的内容，[第1次匹配, 第2次匹配, ...]
+每次匹配，如果只有一个group，就输出该group，否则多个group的匹配组成一个元组
+
+['2020/5/29', '2022/05/2', '2022/12/29', '2021/12/02']
+[('2020', '5', '29'), ('2022', '05', '2'), ('2022', '12', '29'), ('2021', '12', '02')]
+
+4. 假设有一段英文，其中的单词I被误写为i，请给出相应的代码以纠正错误
+text = "i am tony, i am a student, i am ten years old. "
+
+答案：
+re.sub(r'\bi\b', 'I', text)
+

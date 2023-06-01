@@ -1,0 +1,54 @@
+1 要生成10个随机的位于[0,100]范围内的整数，并且将其保存在文件numbers.txt中，一个整数一行。请写出相应的代码。
+
+答案：
+import random
+with open('numbers.txt', 'w') as file:
+    for i in range(10):
+        n = random.randint(0, 100)
+       #  '{}\n'.format(n)
+        file.write(str(n) + '\n')
+
+
+2 上一题产生的numbers.txt，每行有一个整数，求其平均值。请写出相应的代码。
+
+答案：
+with open('numbers.txt') as file:
+    lines = file.read().splitlines()
+    total = 0
+    for line in lines:
+        line = line.strip()
+        total += int(line)
+    print(total / len(lines))
+
+
+with open('numbers.txt') as file:
+    total = lineno = 0
+    for line in file:
+        lineno += 1
+        total += int(line.strip())
+    print(total / lineno)
+
+或者：
+with open('numbers.txt') as file:
+    numbers = [int(line.strip()) for line in file]
+    print(sum(numbers) / len(numbers))
+
+
+
+3. 编写一个名为collapse_space的函数，其参数为文件名。该函数对于每行中的那些单词，去除单词前后多余的空格，
+最后的输出中所有单词之间仅仅以1个空格隔开。对于包含以下文本的文件：
+
+    hello            world!          
+many             spaces   on this             line.   
+最后的输出应该为：
+hello world!
+many spaces on this line.
+
+
+答案：
+def collapse_spaces(file):
+    with open(file) as f:
+        for line in f:
+            line = line.split()
+            if len(line) > 0:
+                print(' '.join(line))
