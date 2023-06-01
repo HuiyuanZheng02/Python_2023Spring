@@ -34,32 +34,70 @@ Prof. Dilin Mao 毛迪林**
 [07-文件](https://github.com/HuiyuanZheng02/Python_2023Spring/blob/main/PPT/07-%E6%96%87%E4%BB%B6.pdf)  
 [07-文件2](https://github.com/HuiyuanZheng02/Python_2023Spring/blob/main/PPT/07-%E6%96%87%E4%BB%B62.pdf)  
 示例程序：[08-file](https://github.com/HuiyuanZheng02/Python_2023Spring/tree/main/%E7%A4%BA%E4%BE%8B%E7%A8%8B%E5%BA%8F/08_file)  
-练习：[Practice6](https://github.com/HuiyuanZheng02/Python_2023Spring/tree/main/Practice/practices6)
+练习：[Practice6](https://github.com/HuiyuanZheng02/Python_2023Spring/tree/main/Practice/practices6)  [解答](https://github.com/HuiyuanZheng02/Python_2023Spring/tree/main/Practice/practices6-sol)  
+[08-正则表达式](https://github.com/HuiyuanZheng02/Python_2023Spring/blob/main/PPT/08-%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F.pdf)  
+示例程序：[09-re](https://github.com/HuiyuanZheng02/Python_2023Spring/tree/main/%E7%A4%BA%E4%BE%8B%E7%A8%8B%E5%BA%8F/09_re)  
+练习：[Practice-re](https://github.com/HuiyuanZheng02/Python_2023Spring/tree/main/Practice/practices-re)  [解答](https://github.com/HuiyuanZheng02/Python_2023Spring/tree/main/Practice/practices-re-sol)  
 
+### 第六单元 复习相关
+[09-practice总结](https://github.com/HuiyuanZheng02/Python_2023Spring/blob/main/PPT/09-practice%E6%80%BB%E7%BB%93.pdf)  
+[Python期末模拟卷](https://github.com/HuiyuanZheng02/Python_2023Spring/blob/main/PPT/Python%E7%BA%BF%E4%B8%8A%E9%97%AD%E5%8D%B7%E6%A8%A1%E6%8B%9F%E5%8D%B7.pdf)
+
+**拓展内容：**
+[os](https://github.com/HuiyuanZheng02/Python_2023Spring/blob/main/PPT/07-extension-os.pdf)
+[struct](https://github.com/HuiyuanZheng02/Python_2023Spring/blob/main/PPT/07-extension-struct.pdf)
+[time](https://github.com/HuiyuanZheng02/Python_2023Spring/blob/main/PPT/07-extension-time.pdf)
 
 ## Homework
-[Homework 1](https://github.com/HuiyuanZheng02/Python_2023Spring/blob/main/Homework-sol/python-w1-sol.txt)  
-[Homework 2](https://github.com/HuiyuanZheng02/Python_2023Spring/blob/main/Homework-sol/python-w2-sol.txt)  
-[Homework 3](https://github.com/HuiyuanZheng02/Python_2023Spring/blob/main/Homework-sol/python-w3-sol.txt)  
-[Homework 4](https://github.com/HuiyuanZheng02/Python_2023Spring/blob/main/Homework-sol/python-w4-sol.txt)  
-[Homework 5](https://github.com/HuiyuanZheng02/Python_2023Spring/blob/main/Homework-sol/python-w5-sol.txt)  
-[Homework 6](https://github.com/HuiyuanZheng02/Python_2023Spring/blob/main/Homework-sol/python-w6-sol.txt)  
-[Homework 7](https://github.com/HuiyuanZheng02/Python_2023Spring/blob/main/Homework-sol/python-w7-sol.txt)  
-[Homework 8](https://github.com/HuiyuanZheng02/Python_2023Spring/blob/main/Homework-sol/python-w8-sol.txt)  
-[Homework 9](https://github.com/HuiyuanZheng02/Python_2023Spring/blob/main/Homework-sol/python-w9-sol.txt)  
-[Homework 10](https://github.com/HuiyuanZheng02/Python_2023Spring/blob/main/Homework-sol/python-w10-sol.txt)  
-[Homework 11](https://github.com/HuiyuanZheng02/Python_2023Spring/blob/main/Homework-sol/python-w11-sol.txt)  
-[Homework 12](https://github.com/HuiyuanZheng02/Python_2023Spring/blob/main/Homework-sol/python-w12-sol.txt)  
+
+<div style="display: flex;">
+  <div style="flex:1">
+    <div><a href="https://github.com/HuiyuanZheng02/Python_2023Spring/blob/main/Homework-sol/python-w1-sol.txt" >Homework 1</a></div>
+    <div><a href="https://github.com/HuiyuanZheng02/Python_2023Spring/blob/main/Homework-sol/python-w2-sol.txt" >Homework 2</a></div>
+    <div><a href="https://github.com/HuiyuanZheng02/Python_2023Spring/blob/main/Homework-sol/python-w3-sol.txt" >Homework 3</a></div>
+    <div><a href="https://github.com/HuiyuanZheng02/Python_2023Spring/blob/main/Homework-sol/python-w4-sol.txt" >Homework 4</a></div>
+  </div>
+  <div style="flex:1">
+    <div><a href="https://github.com/HuiyuanZheng02/Python_2023Spring/blob/main/Homework-sol/python-w5-sol.txt" >Homework 5</a></div>
+    <div><a href="https://github.com/HuiyuanZheng02/Python_2023Spring/blob/main/Homework-sol/python-w6-sol.txt" >Homework 6</a></div>
+    <div><a href="https://github.com/HuiyuanZheng02/Python_2023Spring/blob/main/Homework-sol/python-w7-sol.txt" >Homework 7</a></div>
+    <div><a href="https://github.com/HuiyuanZheng02/Python_2023Spring/blob/main/Homework-sol/python-w8-sol.txt" >Homework 8</a></div>
+  </div>
+  <div style="flex:1">
+    <div><a href="https://github.com/HuiyuanZheng02/Python_2023Spring/blob/main/Homework-sol/python-w9-sol.txt" >Homework 9</a></div>
+    <div><a href="https://github.com/HuiyuanZheng02/Python_2023Spring/blob/main/Homework-sol/python-w10-sol.txt" >Homework 10</a></div>
+    <div><a href="https://github.com/HuiyuanZheng02/Python_2023Spring/blob/main/Homework-sol/python-w11-sol.txt" >Homework 11</a></div>
+    <div><a href="https://github.com/HuiyuanZheng02/Python_2023Spring/blob/main/Homework-sol/python-w12-sol.txt" >Homework 12</a></div>
+  </div>
+  <div style="flex:1">
+    <div><a href="https://github.com/HuiyuanZheng02/Python_2023Spring/blob/main/Homework-sol/python-w13-sol.txt" >Homework 13</a></div>
+    <div><a href="https://github.com/HuiyuanZheng02/Python_2023Spring/blob/main/Homework-sol/python-w14-sol.txt" >Homework 14</a></div>
+  </div>
+</div>
 
 
 ## Project
-[Project1 轮盘赌颜色](https://github.com/HuiyuanZheng02/Python_2023Spring/tree/main/Project/Project1%20%E8%BD%AE%E7%9B%98%E8%B5%8C%E9%A2%9C%E8%89%B2)  
-[Project2 时间转换](https://github.com/HuiyuanZheng02/Python_2023Spring/tree/main/Project/Project2%20%E6%97%B6%E9%97%B4%E8%BD%AC%E6%8D%A2)  
-[Project3 图案问题](https://github.com/HuiyuanZheng02/Python_2023Spring/tree/main/Project/Project3%20%E5%9B%BE%E6%A1%88%E9%97%AE%E9%A2%98)  
-[Project4 欧拉数e](https://github.com/HuiyuanZheng02/Python_2023Spring/tree/main/Project/Project4%20%E6%AC%A7%E6%8B%89%E6%95%B0e)  
-[Project5 猜数游戏](https://github.com/HuiyuanZheng02/Python_2023Spring/tree/main/Project/Project5%20%E7%8C%9C%E6%95%B0%E6%B8%B8%E6%88%8F)  
+
+<div style="display: flex;">
+  <div style="flex:1">
+    <div><a href="https://github.com/HuiyuanZheng02/Python_2023Spring/tree/main/Project/Project1%20%E8%BD%AE%E7%9B%98%E8%B5%8C%E9%A2%9C%E8%89%B2">Project1 轮盘赌颜色</a></div>
+    <div><a href="https://github.com/HuiyuanZheng02/Python_2023Spring/tree/main/Project/Project2%20%E6%97%B6%E9%97%B4%E8%BD%AC%E6%8D%A2">Project2 时间转换</a></div>
+    <div><a href="https://github.com/HuiyuanZheng02/Python_2023Spring/tree/main/Project/Project3%20%E5%9B%BE%E6%A1%88%E9%97%AE%E9%A2%98">Project3 图案问题</a></div>
+    <div><a href="https://github.com/HuiyuanZheng02/Python_2023Spring/tree/main/Project/Project4%20%E6%AC%A7%E6%8B%89%E6%95%B0e">Project4 欧拉数e</a></div>
+    <div><a href="https://github.com/HuiyuanZheng02/Python_2023Spring/tree/main/Project/Project5%20%E7%8C%9C%E6%95%B0%E6%B8%B8%E6%88%8F">Project5 猜数游戏</a></div>
+  </div>
+  <div style="flex:1">
+    <div><a href="https://github.com/HuiyuanZheng02/Python_2023Spring/tree/main/Project/Project6%20%E6%B8%A9%E5%BA%A6%E5%AF%B9%E5%BA%94%E8%A1%A8">Project6 温度对应表</a></div>
+    <div><a href="https://github.com/HuiyuanZheng02/Python_2023Spring/tree/main/Project/Project7%20%E7%99%BE%E9%B8%A1%E9%97%AE%E9%A2%98">Project7 百鸡问题</a></div>
+    <div><a href="https://github.com/HuiyuanZheng02/Python_2023Spring/tree/main/Project/Project8%20%E5%B9%BB%E6%96%B9">Project8 幻方</a></div>
+    <div><a href="https://github.com/HuiyuanZheng02/Python_2023Spring/tree/main/Project/Project9%20%E6%88%90%E7%BB%A9%E5%8D%95">Project9 成绩单</a></div>
+    <div><a href="https://github.com/HuiyuanZheng02/Python_2023Spring/tree/main/Project/Project10%20%E6%96%87%E6%9C%AC%E8%A3%85%E9%A5%B0">Project10 文本修饰</a></div>    
+  </div>
+</div>
+
+<!-- [Project5 猜数游戏](https://github.com/HuiyuanZheng02/Python_2023Spring/tree/main/Project/Project5%20%E7%8C%9C%E6%95%B0%E6%B8%B8%E6%88%8F)  
 [Project6 温度对应表](https://github.com/HuiyuanZheng02/Python_2023Spring/tree/main/Project/Project6%20%E6%B8%A9%E5%BA%A6%E5%AF%B9%E5%BA%94%E8%A1%A8)  
 [Project7 百鸡问题](https://github.com/HuiyuanZheng02/Python_2023Spring/tree/main/Project/Project7%20%E7%99%BE%E9%B8%A1%E9%97%AE%E9%A2%98)  
 [Project8 幻方](https://github.com/HuiyuanZheng02/Python_2023Spring/tree/main/Project/Project8%20%E5%B9%BB%E6%96%B9)  
 [Project9 成绩单](https://github.com/HuiyuanZheng02/Python_2023Spring/tree/main/Project/Project9%20%E6%88%90%E7%BB%A9%E5%8D%95)  
-[Project10 文本修饰](https://github.com/HuiyuanZheng02/Python_2023Spring/tree/main/Project/Project10%20%E6%96%87%E6%9C%AC%E8%A3%85%E9%A5%B0)  
+[Project10 文本修饰](https://github.com/HuiyuanZheng02/Python_2023Spring/tree/main/Project/Project10%20%E6%96%87%E6%9C%AC%E8%A3%85%E9%A5%B0)   -->
