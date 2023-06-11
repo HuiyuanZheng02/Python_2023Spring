@@ -80,4 +80,5 @@ Prof. Dilin Mao 毛迪林**
 [Project7 百鸡问题](https://github.com/HuiyuanZheng02/Python_2023Spring/tree/main/Project/Project7%20%E7%99%BE%E9%B8%A1%E9%97%AE%E9%A2%98)  
 [Project8 幻方](https://github.com/HuiyuanZheng02/Python_2023Spring/tree/main/Project/Project8%20%E5%B9%BB%E6%96%B9)  
 [Project9 成绩单](https://github.com/HuiyuanZheng02/Python_2023Spring/tree/main/Project/Project9%20%E6%88%90%E7%BB%A9%E5%8D%95)  
-[Project10 文本修饰](https://github.com/HuiyuanZheng02/Python_2023Spring/tree/main/Project/Project10%20%E6%96%87%E6%9C%AC%E8%A3%85%E9%A5%B0)  
+[Project10 文本修饰](https://github.com/HuiyuanZheng02/Python_2023Spring/tree/main/Project/Project10%20%E6%96%87%E6%9C%AC%E8%A3%85%E9%A5%B0)   
+[Project11 正则表达式](https://github.com/HuiyuanZheng02/Python_2023Spring/tree/main/Project/Project11%20%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F) 
