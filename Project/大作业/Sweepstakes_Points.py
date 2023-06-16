@@ -1,6 +1,6 @@
 '''
 2023-06-06
-20302010071-郑惠元
+@HuiyuanZheng02
 '''
 import random
 import time

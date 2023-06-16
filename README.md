@@ -41,7 +41,9 @@ Prof. Dilin Mao 毛迪林**
 
 ### 第六单元 复习相关
 [09-practice总结](https://github.com/HuiyuanZheng02/Python_2023Spring/blob/main/PPT/09-practice%E6%80%BB%E7%BB%93.pdf)  
+[09-Python程序设计复习](https://github.com/HuiyuanZheng02/Python_2023Spring/blob/main/PPT/09-Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%A4%8D%E4%B9%A0.pdf)  
 [Python期末模拟卷](https://github.com/HuiyuanZheng02/Python_2023Spring/blob/main/PPT/Python%E7%BA%BF%E4%B8%8A%E9%97%AD%E5%8D%B7%E6%A8%A1%E6%8B%9F%E5%8D%B7.pdf)
+[答案](https://github.com/HuiyuanZheng02/Python_2023Spring/blob/main/PPT/Python%E7%BA%BF%E4%B8%8A%E9%97%AD%E5%8D%B7%E6%A8%A1%E6%8B%9F%E5%8D%B7%E7%AD%94%E6%A1%88.pdf)
 
 **拓展内容：**
 [os](https://github.com/HuiyuanZheng02/Python_2023Spring/blob/main/PPT/07-extension-os.pdf)
@@ -78,7 +80,13 @@ Prof. Dilin Mao 毛迪林**
 [Project5 猜数游戏](https://github.com/HuiyuanZheng02/Python_2023Spring/tree/main/Project/Project5%20%E7%8C%9C%E6%95%B0%E6%B8%B8%E6%88%8F)  
 [Project6 温度对应表](https://github.com/HuiyuanZheng02/Python_2023Spring/tree/main/Project/Project6%20%E6%B8%A9%E5%BA%A6%E5%AF%B9%E5%BA%94%E8%A1%A8)  
 [Project7 百鸡问题](https://github.com/HuiyuanZheng02/Python_2023Spring/tree/main/Project/Project7%20%E7%99%BE%E9%B8%A1%E9%97%AE%E9%A2%98)  
-[Project8 幻方](https://github.com/HuiyuanZheng02/Python_2023Spring/tree/main/Project/Project8%20%E5%B9%BB%E6%96%B9)  
+[Project8 幻方](https://github.com/HuiyuanZheng02/Python_2023Spring/tree/main/Project/Project8%20%E5%B9%BB%E6%96%B9)最终得分为95，应注意【允许重复应该包含幻方数字不重复的情况】，请自行修改源程序  
 [Project9 成绩单](https://github.com/HuiyuanZheng02/Python_2023Spring/tree/main/Project/Project9%20%E6%88%90%E7%BB%A9%E5%8D%95)  
 [Project10 文本修饰](https://github.com/HuiyuanZheng02/Python_2023Spring/tree/main/Project/Project10%20%E6%96%87%E6%9C%AC%E8%A3%85%E9%A5%B0)   
-[Project11 正则表达式](https://github.com/HuiyuanZheng02/Python_2023Spring/tree/main/Project/Project11%20%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F) 
+[Project11 正则表达式](https://github.com/HuiyuanZheng02/Python_2023Spring/tree/main/Project/Project11%20%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F)  
+[大作业 积分抽奖](https://github.com/HuiyuanZheng02/Python_2023Spring/tree/main/Project/%E5%A4%A7%E4%BD%9C%E4%B8%9A)  
+除Project 8，其余得分均为100.
+
+---
+**Course ends with a score of *A*  
+Any questions, feel free to contact by email.**
